@@ -1,0 +1,78 @@
+body
+{
+    background-image: url("Background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#content
+{
+    background-color: rgba(250, 235, 215, 0.4);
+    border-radius: 50px;
+    width: 90%;
+    margin-top: -7px;
+}
+#heading
+{
+    font-family: 'Skranji', cursive;
+    font-size: 80px;
+    margin-bottom: -20px;
+}
+#Download
+{
+    margin-top: 460px;
+    margin-bottom: 10px;
+}
+canvas
+{
+    border: 3px dashed black;
+    box-shadow: 40px 25px 30px black;
+    top: 180 !important;
+}
+.buttons
+{
+    font-size: 30px;
+    font-family: 'Itim', cursive;
+    background-image: linear-gradient(to top left, red, red, red, red, red, red, red, red, red, red, red);
+    margin-top: -100px;
+}
+.buttons:hover
+{
+    animation-name : Button;
+    animation-duration: 0.2s;
+    animation-iteration-count: 1;
+    background-image: linear-gradient(to top left, yellow, yellow, yellow, yellow, yellow, yellow, yellow, yellow, yellow, yellow);
+}
+.buttons:not(:hover)
+{
+    animation-name: Button_Reverse;
+    animation-duration: 0.2s;
+    animation-iteration-count: 1;
+}
+@keyframes Button
+{
+    0% {background-image: linear-gradient(to top left, red, red, red, red, red, red, red, red, red, red, yellow);}
+    10% {background-image: linear-gradient(to top left, red, red, red, red, red, red, red, red, red, yellow, yellow);}
+    20% {background-image: linear-gradient(to top left, red, red, red, red, red, red, red, red, yellow, yellow, yellow);}
+    30% {background-image: linear-gradient(to top left, red, red, red, red, red, red, red, yellow, yellow, yellow, yellow);}
+    40% {background-image: linear-gradient(to top left, red, red, red, red, red, red, yellow, yellow, yellow, yellow, yellow);}
+    50% {background-image: linear-gradient(to top left, red, red, red, red, red, yellow, yellow, yellow, yellow, yellow, yellow);}
+    60% {background-image: linear-gradient(to top left, red, red, red, red, yellow, yellow, yellow, yellow, yellow, yellow, yellow);}
+    70% {background-image: linear-gradient(to top left, red, red, red, yellow, yellow, yellow, yellow, yellow, yellow, yellow, yellow);}
+    80% {background-image: linear-gradient(to top left, red, red, yellow, yellow, yellow, yellow, yellow, yellow, yellow, yellow, yellow);}
+    90% {background-image: linear-gradient(to top left, red, yellow, yellow, yellow, yellow, yellow, yellow, yellow, yellow, yellow, yellow);}
+    100% {background-image: linear-gradient(to top left, yellow, yellow, yellow, yellow, yellow, yellow, yellow, yellow, yellow, yellow);}
+}
+@keyframes Button_Reverse
+{
+    0% {background-image: linear-gradient(to top left, yellow, yellow, yellow, yellow, yellow, yellow, yellow, yellow, yellow, yellow);}
+    10% {background-image: linear-gradient(to top left, red, yellow, yellow, yellow, yellow, yellow, yellow, yellow, yellow, yellow, yellow);}
+    20% {background-image: linear-gradient(to top left, red, red, yellow, yellow, yellow, yellow, yellow, yellow, yellow, yellow, yellow);}
+    30% {background-image: linear-gradient(to top left, red, red, red, yellow, yellow, yellow, yellow, yellow, yellow, yellow, yellow);}
+    40% {background-image: linear-gradient(to top left, red, red, red, red, yellow, yellow, yellow, yellow, yellow, yellow, yellow);}
+    50% {background-image: linear-gradient(to top left, red, red, red, red, red, yellow, yellow, yellow, yellow, yellow, yellow);}
+    60% {background-image: linear-gradient(to top left, red, red, red, red, red, red, yellow, yellow, yellow, yellow, yellow);}
+    70% {background-image: linear-gradient(to top left, red, red, red, red, red, red, red, yellow, yellow, yellow, yellow);}
+    80% {background-image: linear-gradient(to top left, red, red, red, red, red, red, red, red, yellow, yellow, yellow);}
+    90% {background-image: linear-gradient(to top left, red, red, red, red, red, red, red, red, red, yellow, yellow);}
+    100% {background-image: linear-gradient(to top left, red, red, red, red, red, red, red, red, red, red, yellow);}
+}
